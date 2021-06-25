@@ -1,0 +1,43 @@
+.social-media {
+    position: absolute;
+    padding: 11px 0 11px 11px;
+    height: 196px;
+    left: 97%;
+    top: 20rem;
+}
+
+.social-ikon {
+    list-style-type: none;
+    margin: 1rem auto;
+}
+
+.social-link {
+    display: block;
+    border-radius: 100%;
+    width: 33px;
+    height: 33px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/*Dodanie responsywności*/
+@media screen and (max-width: 1024px) {
+    .social-media {
+        padding: 0;
+        top: 16rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .social-media {
+        left: 95%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .social-media {
+        top: 10rem;
+        left: 93%;
+    }
+}

@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+
+}
+
+*::before,
+a::after {
+  box-sizing: border-box;
+
+}
+
+html,
+main {
+  background-color: #0A2455;
+}
+
+.container {
+  max-height: 1500px;
+}
+
+.card {
+  width: 28rem;
+  border-radius: 1rem;
+  display: block;
+  margin: 8rem auto 0;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form-control {
+  width: 20rem;
+  background: #FFFFFF;
+  border: 1px solid #B2B2B2;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 2rem auto;
+}
+
+.form-control:last-child {
+  margin: 0 auto 2rem;
+}
+
+.lokacja {
+  border-radius: 5px;
+}
+
+.date-title {
+  margin-left: 3rem;
+}
+
+.port_options {
+  margin-left: 3rem;
+}
+
+.radio_options {
+  margin: 1rem 0 0 3rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
+  color: #0a2455;
+  background: #FFFFFF;
+  margin: 1.5rem 6.5rem 0.5rem;
+  border: 1px #FFFFFF solid;
+  border-radius: 100px;
+}
+
+/*zmiana koloru przycisku kiedy kursor znajduje się na nim*/
+.btn:hover {
+  color: #fff;
+  background: #0a2455;
+  border: 1px #0a2455 solid;
+}
+
+/*Dodanie responsywności*/
+@media screen and (max-width: 769px) {
+  .card {
+    font-size: 0.9rem;
+  }
+
+  .card-body {
+    padding: 1rem 2rem;
+  }
+
+  .form-control {
+    width: 18rem;
+    margin: 1.6rem auto;
+  }
+
+  .form-control:last-child {
+    margin: 0 auto 1.5rem;
+  }
+
+  .btn {
+    margin: 1.5rem 5rem 0.5rem;
+    padding: 0.5rem 7rem;
+  }
+
+  .social-media {
+    position: unset;
+    display: flex;
+    margin: 0 30%;
+    max-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .card {
+    width: 98%;
+  }
+
+  .date-title {
+    margin-left: 1.8rem;
+  }
+
+  .port_options {
+    margin-left: 1.8rem;
+  }
+
+  .radio_title {
+    font-size: 1rem;
+  }
+
+  .radio_options {
+    margin: 1rem 0 0 1.8rem;
+  }
+
+  .btn {
+    margin: 1.5rem 18% 0.5rem;
+    padding: 0.5rem 7rem;
+  }
+
+  .social-media {
+    margin: 0 7rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .social-media {
+    position: unset;
+    display: flex;
+    margin: 0 20%;
+    max-height: 3rem;
+  }
+
+  .form-control {
+    width: 15rem;
+    margin: 1.6rem auto;
+  }
+
+  .date-title {
+    margin-left: 0.3rem;
+  }
+
+  .port_options {
+    margin-left: 0.3rem;
+  }
+
+  .radio_title {
+    font-size: 1rem;
+  }
+
+  .radio_options {
+    margin: 1rem 0 0 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    margin: 1.5rem 0rem 0.5rem;
+  }
+}

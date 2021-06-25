@@ -1,0 +1,75 @@
+<!DOCTYPE html><!--Definicja dokumentu typu HTML-->
+<html lang="pl"><!--Deklaracja języka strony internetowej-->
+
+<head><!--Część nagłówkowa z informacjami dla przeglądarki-->
+    <meta charset="UTF-8"><!--Deklaracja zestawu znaków używanego na stronie internetowej-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Użycie najnowszej wersji silnika lub Chrome Frame, jeżeli jest zainstalowany-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Określenie sposobu wyświetlania strony na mobilnych urządzeniach-->
+    <link href="img/logo.svg.svg" rel="shortcut icon" type="image/png"><!--Dodanie ikonki stronie-->
+    <link rel="stylesheet" href="css/Home.css"><!--Wskazanie pliku z arkuszem CSS opisującym sposób formatowania poszczególnych elementów na stronie-->
+    <link rel="stylesheet" href="css/header.css"><!--Wskazanie pliku z arkuszem CSS opisującym sposób formatowania poszczególnych elementów na stronie-->
+    <link rel="stylesheet" href="css/fonts.css"><!--Wskazanie pliku z arkuszem CSS opisującym sposób formatowania poszczególnych elementów na stronie-->
+    <link rel="stylesheet" href="css/social_media.css"><!--Wskazanie pliku z arkuszem CSS opisującym sposób formatowania poszczególnych elementów na stronie-->
+    <script src="JS/Home.js"></script><!--Podłączenie pliku JS-->
+
+    <title>WavesLength</title><!--Tytuł strony wyświetlany w pasku tytułu okna przeglądarki-->
+</head>
+
+<body><!--Właściwą treść (ciało) dokumentu widoczną w oknie przeglądarki-->
+    <header><!--Tworzenie headera-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Blog.html">Blog</a>
+            <a href="Reserved.html">Rezerwacja&nbsp;rejsa</a>
+            <a href="Galeria.html">Galeria</a>
+        </div>
+        <div onclick="openNav()">
+            <!--Po kliknięciu na dany element wykonuje się polecenie w javascript-->
+            <div class="burger" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+
+        <a href="Index.html" class="super_logo_link"><img src="img/WavesLength.svg" alt="Logo" class="super_logo"></a>
+        <div class="link">
+            <a href="Blog.html" class="nav-links blog">Blog</a>
+            <a href="Reserved.html" class="nav-links rezerwacja ">Rezerwacja&nbsp;rejsa</a>
+            <a href="Galeria.html" class="nav-links galeria">Galeria</a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-img">
+                <img src="img/Intersect.png" alt="">
+            </div>
+            <div class="main-text">
+                <h2 class="title">WavesLength Fishing Charters</h2><!--Nagłówek-->
+                <p class="sub-text"><!--Treść strony-->
+                    WavesLength Fishing Charters to&nbsp;pierwsza firma czarterowa na&nbsp;wybrzeżach Karoliny.
+                    Specjalizujemy się w&nbsp;czarterach indywidualnych i&nbsp;grupowych przez cały rok. Obiecujemy,
+                    że&nbsp;nie będziesz rozczarowany wybierając z&nbsp;nami swoją kolejną wędkarską przygodę.
+                </p>
+            </div>
+            <div class="text-button"><!--Tworzenie przycisku dla rezerwacji rejsa-->
+                <a href="Reserved.html" class="to-reserwed"> <button class="link-button">Rezerwacja</button> </a>
+            </div>
+            <aside><!--Tworzenie listy w bloku nawigacji-->
+                <ul class="social-media">
+                    <li class="social-ikon"><a href="https://www.facebook.com/" class="social-link social-link-fb"><img
+                                src="img/facebook.svg" alt="facebook"></a>
+                    </li>
+                    <li class="social-ikon"><a href="https://www.youtube.com/" class="social-link social-link-yt"><img
+                                src="img/youtube.svg " alt="youtube"></a>
+                    </li>
+                    <li class="social-ikon"><a href="https://www.instagram.com/" class="social-link social-link-in"><img
+                                src="img/instagram.svg" alt="instagram"></a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+</body>
+
+</html>

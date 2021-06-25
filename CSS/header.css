@@ -1,0 +1,130 @@
+header {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: #0A2455;
+}
+
+.super_logo {
+  position: relative;
+  padding: 1.8rem 0 0.6rem 0;
+}
+
+.super_logo_link {
+  margin: 1.8rem 0 0.6rem 7.5rem;
+}
+
+.link {
+  position: relative;
+  display: block;
+  float: right;
+}
+
+.nav-links {
+  float: left;
+  display: block;
+  text-align: center;
+  padding-bottom: 3.25rem;
+  position: relative;
+  height: 5rem;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 2.7rem;
+  padding: 1rem 2.5rem 0;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.nav-links:hover,
+.nav-links.active {
+  background-color: #fff;
+  color: #0A2455;
+}
+
+.burger {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  margin: 1rem 0 0 1rem;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.13);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  backdrop-filter: blur(25px);
+}
+
+/* Linki menu nawigacyjnego */
+.sidenav a {
+  padding: 0px 8px 38px 32px;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 18px;
+  color: #0A2455;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Gdy najedziesz myszą na linki nawigacyjne, zmienia się ich kolor */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*Dodanie responsywności*/
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+
+}
+
+@media screen and (max-width: 450px) {
+  .super_logo_link {
+    margin: 1.8rem 0 0.6rem 5.5rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .super_logo_link {
+    margin: 1.8rem 0 0.6rem 5rem;
+  }
+}

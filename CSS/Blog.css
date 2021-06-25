@@ -1,0 +1,125 @@
+* {/*Resetowanie marginesu i dopełnienia */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+/*zabrania przekraczania granic boksu */
+*::before,
+a::after {
+    box-sizing: border-box;
+
+}
+/*nadaje color tła dla strony*/
+html,
+main {
+    background-color: #0A2455;
+}
+/*maksymalna wysokość elementu */
+.container {
+    max-height: 1500px;
+}
+/*umieszcza obrazy w 2 kolumnach i uniemożliwia przepełnienie szerokości */
+.masonry-grid {
+    max-height: 580px;
+    column-count: 2;
+
+    column-gap: 0rem;
+
+    width: 100%;
+    margin-top: 7rem;
+    overflow-x: hidden;
+}
+/*ustala górny margines*/
+.first_grid_item {
+    margin-top: 5rem;
+}
+/*Aby nie uzyskać luki między obrazem a jego podpisem ustalamy "break-inside" */
+.masonry-grid__item {
+    break-inside: avoid;
+
+    margin-bottom: 1rem;
+}
+/*Ustalamy rozmiar obrazka*/
+.first_img_size {
+    width: 80%;
+    margin-left: 5rem;
+
+}
+
+.second_img_size,
+.third_img_size {
+    width: 70%;
+} 
+/*Centrujemy podpis do obrazku*/
+.caption_first {
+    text-align: center;
+    margin-left: 2rem;
+}
+/*Ustalenie elementu jako wbudowany blok  */
+.caption {
+    margin-left: 7.5rem;
+    display: inline-block;
+}
+/*Ustalanie rozmirów tekstu*/
+.caption,
+.caption_first {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.more {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.more_link {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Dodanie responsywności*/
+@media screen and (max-width: 1025px) {
+    .caption {
+        margin-left: 4rem;
+    }
+
+    .masonry-grid {
+        max-height: 450px;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    .masonry-grid {
+        column-count: auto;
+    }
+
+    .first_img_size {
+        width: 100%;
+        margin: 0 auto 1rem;
+    }
+
+    .second_img_size,
+    .third_img_size {
+        width: 100%;
+        margin: 1rem auto 1rem;
+    }
+
+    .caption {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .more {
+        font-size: 18px;
+    }
+}
